@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_apple_stock.csv')
-
-fig = px.line(df, x = 'AAPL_x', y = 'AAPL_y', title='Apple Share Prices over time (2014)')
+#df = pd.read_csv(r'C:\PS\logs\CTC-02 2023-11-30 11-44-50.csv')
+df = pd.read_csv(r'C:\PS\logs\18MB 2023-11-23 10-16-38.csv')
+fig = px.line(df, x='Time', y=['services(952)CPU'], title='Title of your graph')
 fig.show()
